@@ -3,9 +3,22 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
+const bodyParser = require('body-parser');
  
 server.use(middlewares)
+server.use(bodyParser.json());
 server.use('', router)
+server.post('/api/posts', (req, res) => {
+    // Gelen verileri almak için req.body kullanılır
+    const newPost = req.body;
+
+    // Yeni bir post işlemini burada gerçekleştirebilirsiniz
+    // Örnek: db.json dosyasına yeni bir veri ekleme
+    router.db.get('posts').push(newPost).write();
+
+    // Başarılı yanıt döndürme
+    res.status(201).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
+});
 server.listen(process.env.PORT || 3000, () => {
   console.log('JSON Server is running')
 })
