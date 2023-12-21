@@ -17,11 +17,25 @@ server.post('/api/posts', (req, res) => {
     router.db.get('posts').push(newPost).write();
 
     // Başarılı yanıt döndürme
-    res.status(201).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
+    res.status(200).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
 });
 server.listen(process.env.PORT || 3000, () => {
   console.log('JSON Server is running')
 })
+server.delete('/api/posts/:id', (req, res) => {
+    const postId = parseInt(req.params.id); // Silinecek postun ID'sini alıyoruz
+
+    // db.json'dan ilgili veriyi bulup kaldırma
+    const posts = router.db.get('posts');
+    const postIndex = posts.findIndex(post => post.id === postId);
+
+    if (postIndex !== -1) {
+        posts.splice(postIndex, 1).write();
+        res.json({ message: `Post ID ${postId} başarıyla silindi` });
+    } else {
+        res.status(404).json({ message: `Post ID ${postId} bulunamadı` });
+    }
+});
 
 
 // const jsonServer = require('json-server');
