@@ -57,6 +57,6 @@ server.put('/api/posts/:id', (req, res) => {
 server.use('/api', router);
 
 // Belirtilen port üzerinden server'ı dinlemeye başlama
-server.listen(process.env.PORT || 5000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log('JSON Server is running');
 });
