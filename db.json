@@ -8,7 +8,8 @@
       "rating": 4.7,
       "votes": 65,
       "popular": true,
-      "available": true
+      "available": true,
+      "category" : "hotDrinks"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "rating": 4.85,
       "votes": 15,
       "popular": true,
-      "available": true
+      "available": true,
+      "category" : "hotDrinks"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "rating": 4.9,
       "votes": 55,
       "popular": false,
-      "available": true
+      "available": true,
+      "category" : "hotDrinks"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "rating": 5,
       "votes": 23,
       "popular": false,
-      "available": true
+      "available": true,
+      "category" : "hotDrinks"
     },
     {
       "id": 5,
@@ -48,57 +52,8 @@
       "rating": "4.65",
       "votes": 122,
       "popular": false,
-      "available": false
-    },
-    {
-      "id": 6,
-      "name": "Valentine Special",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/valentine-special.jpg",
-      "price": "$5.50",
-      "rating": null,
-      "votes": 0,
-      "popular": false,
-      "available": true
-    },
-    {
-      "name": "House Coffee",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
-      "price": "$3.50",
-      "rating": 4.85,
-      "votes": 15,
-      "popular": true,
-      "available": true,
-      "id": 7
-    },
-    {
-      "name": "House Coffee",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
-      "price": "$3.50",
-      "rating": 4.85,
-      "votes": 15,
-      "popular": true,
-      "available": true,
-      "id": 8
-    },
-    {
-      "name": "House Coffee",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
-      "price": "$3.50",
-      "rating": 4.85,
-      "votes": 15,
-      "popular": true,
-      "available": true,
-      "id": 9
-    },
-    {
-      "name": "House Coffee",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
-      "price": "$3.50",
-      "rating": 4.85,
-      "votes": 15,
-      "popular": true,
-      "available": true,
-      "id": 10
+      "available": false,
+      "category" : "hotDrinks"
     }
   ],
   "posts": [
