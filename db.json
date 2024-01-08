@@ -104,13 +104,24 @@
     {
       "id": 5,
       "name": "Chocolate Coffee",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/chocolate-coffee.jpg",
+      "image": "https://firebasestorage.googleapis.com/v0/b/villa-avasin-hookah.appspot.com/o/turkish-tea.jpg?alt=media&token=00ea4506-756c-4d4a-b5ee-cf78e8ab4fdd",
       "price": "$4.00",
       "rating": "4.65",
       "votes": 122,
       "popular": false,
       "available": false,
       "category" : "hotDrinks"
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Coffee",
+      "image": "https://firebasestorage.googleapis.com/v0/b/villa-avasin-hookah.appspot.com/o/turkish-tea.jpg?alt=media&token=00ea4506-756c-4d4a-b5ee-cf78e8ab4fdd",
+      "price": "$4.00",
+      "rating": "4.65",
+      "votes": 122,
+      "popular": false,
+      "available": false,
+      "category" : "coldDrinks"
     }
   ],
   "accounts": [],
