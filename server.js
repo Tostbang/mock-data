@@ -36,7 +36,23 @@ server.delete('/api/posts/:id', (req, res) => {
         res.status(404).json({ message: `Post ID ${postId} bulunamadı` });
     }
 });
+server.put('/api/posts/:id', (req, res) => {
+    const postId = parseInt(req.params.id); 
+    const updatedPost = req.body; 
 
+    const posts = router.db.get('posts');
+    const postIndex = posts.findIndex(post => post.id === postId);
+
+    if (postIndex !== -1) {
+        posts
+            .find()
+            .assign(updatedPost)
+            .write();
+        res.json({ message: `Post ID ${postId} başarıyla güncellendi`, updatedPost });
+    } else {
+        res.status(404).json({ message: `Post ID ${postId} bulunamadı` });
+    }
+});
 
 // const jsonServer = require('json-server');
 // const server = jsonServer.create();
