@@ -9,7 +9,7 @@
       "votes": 65,
       "popular": true,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "votes": 15,
       "popular": true,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "votes": 55,
       "popular": false,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "votes": 23,
       "popular": false,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "votes": 122,
       "popular": false,
       "available": false,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     }
   ],
   "posts": [
@@ -66,7 +66,7 @@
       "votes": 65,
       "popular": true,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 2,
@@ -77,7 +77,7 @@
       "votes": 15,
       "popular": true,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 3,
@@ -88,7 +88,7 @@
       "votes": 55,
       "popular": false,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 4,
@@ -99,7 +99,7 @@
       "votes": 23,
       "popular": false,
       "available": true,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 5,
@@ -110,7 +110,7 @@
       "votes": 122,
       "popular": false,
       "available": false,
-      "category" : "hotDrinks"
+      "category": "hotDrinks"
     },
     {
       "id": 5,
@@ -121,15 +121,38 @@
       "votes": 122,
       "popular": false,
       "available": false,
-      "category" : "coldDrinks"
+      "category": "coldDrinks"
     }
   ],
   "accounts": [
     {
-      "id" : 1,
-      "userName" : "cafe",
-      "pass" : 123456
+      "id": 1,
+      "userName": "cafe",
+      "pass": 123456
     }
   ],
-  "transactions": []
+  "mealofday": [
+    {
+      "id": 1,
+      "name": "Günün Yemeği",
+      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg",
+      "price": "$5.20",
+      "rating": 4.7,
+      "votes": 65,
+      "popular": true,
+      "available": true,
+      "category": "hotDrinks"
+    },
+    {
+      "id": 2,
+      "name": "Günün Çorbası",
+      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
+      "price": "$3.50",
+      "rating": 4.85,
+      "votes": 15,
+      "popular": true,
+      "available": true,
+      "category": "hotDrinks"
+    }
+  ]
 }

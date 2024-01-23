@@ -30,11 +30,39 @@ server.post('/api/accounts', (req, res) => {
     // Başarılı yanıt döndürme
     res.status(200).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
 });
+server.post('/api/mealofday', (req, res) => {
+    // Gelen verileri almak için req.body kullanılır
+    const newPost = req.body;
+
+    // Yeni bir post işlemini burada gerçekleştirebilirsiniz
+    // Örnek: db.json dosyasına yeni bir veri ekleme
+    router.db.get('mealofday').push(newPost).write();
+
+    // Başarılı yanıt döndürme
+    res.status(200).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
+});
 server.put('/api/accounts/:id', (req, res) => {
     const postId = parseInt(req.params.id); 
     const updatedPost = req.body; 
 
     const posts = router.db.get('accounts');
+    const postIndex = posts.findIndex(post => post.id === postId);
+
+    if (postIndex !== -1) {
+        posts
+            .find()
+            .assign(updatedPost)
+            .write();
+        res.json({ message: `Post ID ${postId} başarıyla güncellendi`, updatedPost });
+    } else {
+        res.status(404).json({ message: `Post ID ${postId} bulunamadı` });
+    }
+});
+server.put('/api/mealofday/:id', (req, res) => {
+    const postId = parseInt(req.params.id); 
+    const updatedPost = req.body; 
+
+    const posts = router.db.get('mealofday');
     const postIndex = posts.findIndex(post => post.id === postId);
 
     if (postIndex !== -1) {
@@ -55,6 +83,20 @@ server.delete('/api/posts/:id', (req, res) => {
 
     // db.json'dan ilgili veriyi bulup kaldırma
     const posts = router.db.get('posts');
+    const postIndex = posts.findIndex(post => post.id === postId);
+
+    if (postIndex !== -1) {
+        posts.splice(postIndex, 1).write();
+        res.json({ message: `Post ID ${postId} başarıyla silindi` });
+    } else {
+        res.status(404).json({ message: `Post ID ${postId} bulunamadı` });
+    }
+});
+server.delete('/api/mealofday/:id', (req, res) => {
+    const postId = parseInt(req.params.id); // Silinecek postun ID'sini alıyoruz
+
+    // db.json'dan ilgili veriyi bulup kaldırma
+    const posts = router.db.get('mealofday');
     const postIndex = posts.findIndex(post => post.id === postId);
 
     if (postIndex !== -1) {
