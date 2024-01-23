@@ -124,6 +124,11 @@
       "category" : "coldDrinks"
     }
   ],
-  "accounts": [],
+  "accounts": [
+    {
+      "userName" : "cafe",
+      "pass" : 123456
+    }
+  ],
   "transactions": []
 }

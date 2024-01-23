@@ -19,6 +19,17 @@ server.post('/api/posts', (req, res) => {
     // Başarılı yanıt döndürme
     res.status(200).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
 });
+server.post('/api/accounts', (req, res) => {
+    // Gelen verileri almak için req.body kullanılır
+    const newPost = req.body;
+
+    // Yeni bir post işlemini burada gerçekleştirebilirsiniz
+    // Örnek: db.json dosyasına yeni bir veri ekleme
+    router.db.get('accounts').push(newPost).write();
+
+    // Başarılı yanıt döndürme
+    res.status(200).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
+});
 server.listen(process.env.PORT || 3000, () => {
   console.log('JSON Server is running')
 })
