@@ -57,78 +57,7 @@
     }
   ],
   "posts": [
-    {
-      "id": 1,
-      "name": "Cappuccino",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg",
-      "price": "$5.20",
-      "rating": 4.7,
-      "votes": 65,
-      "popular": true,
-      "available": true,
-      "description":"sıcak içecek",
-      "category": "Sıcak İçecekler"
-    },
-    {
-      "id": 2,
-      "name": "House Coffee",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
-      "price": "$3.50",
-      "rating": 4.85,
-      "votes": 15,
-      "popular": true,
-      "available": true,
-      "description":"soğuk içecek",
-      "category": "Soğuk İçecekler"
-    },
-    {
-      "id": 3,
-      "name": "Espresso",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/espresso.jpg",
-      "price": "$2.50",
-      "rating": 4.9,
-      "votes": 55,
-      "popular": false,
-      "available": true,
-      "description":"sıcak içecek",
-      "category": "Sıcak İçecekler"
-    },
-    {
-      "id": 4,
-      "name": "Coffee Latte",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/coffee-latte.jpg",
-      "price": "$4.50",
-      "rating": 5,
-      "votes": 23,
-      "popular": false,
-      "available": true,
-      "description":"sıcak içecek",
-      "category": "Sıcak İçecekler"
-    },
-    {
-      "id": 5,
-      "name": "Chocolate Coffee",
-      "image": "https://firebasestorage.googleapis.com/v0/b/villa-avasin-hookah.appspot.com/o/turkish-tea.jpg?alt=media&token=00ea4506-756c-4d4a-b5ee-cf78e8ab4fdd",
-      "price": "$4.00",
-      "rating": "4.65",
-      "votes": 122,
-      "popular": false,
-      "available": false,
-      "description":"atıştırmalık",
-      "category": "Atıştımalıklar"
-    },
-    {
-      "id": 5,
-      "name": "Chocolate Coffee",
-      "image": "https://firebasestorage.googleapis.com/v0/b/villa-avasin-hookah.appspot.com/o/turkish-tea.jpg?alt=media&token=00ea4506-756c-4d4a-b5ee-cf78e8ab4fdd",
-      "price": "$4.00",
-      "rating": "4.65",
-      "votes": 122,
-      "popular": false,
-      "available": false,
-      "description":"tatlı",
-      "category": "Tatlılar"
-    }
+    
   ],
   "accounts": [
     {
@@ -138,27 +67,6 @@
     }
   ],
   "mealofday": [
-    {
-      "id": 1,
-      "name": "Günün Yemeği",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg",
-      "price": "$5.20",
-      "rating": 4.7,
-      "votes": 65,
-      "popular": true,
-      "available": true,
-      "category": "hotDrinks"
-    },
-    {
-      "id": 2,
-      "name": "Günün Çorbası",
-      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/house-coffee.jpg",
-      "price": "$3.50",
-      "rating": 4.85,
-      "votes": 15,
-      "popular": true,
-      "available": true,
-      "category": "hotDrinks"
-    }
+    
   ]
 }
