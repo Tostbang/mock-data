@@ -30,6 +30,23 @@ server.post('/api/accounts', (req, res) => {
     // Başarılı yanıt döndürme
     res.status(200).json({ message: 'Post başarıyla oluşturuldu', post: newPost });
 });
+server.put('/api/accounts/:id', (req, res) => {
+    const postId = parseInt(req.params.id); 
+    const updatedPost = req.body; 
+
+    const posts = router.db.get('accounts');
+    const postIndex = posts.findIndex(post => post.id === postId);
+
+    if (postIndex !== -1) {
+        posts
+            .find()
+            .assign(updatedPost)
+            .write();
+        res.json({ message: `Post ID ${postId} başarıyla güncellendi`, updatedPost });
+    } else {
+        res.status(404).json({ message: `Post ID ${postId} bulunamadı` });
+    }
+});
 server.listen(process.env.PORT || 3000, () => {
   console.log('JSON Server is running')
 })
