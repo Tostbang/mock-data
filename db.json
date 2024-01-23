@@ -66,6 +66,7 @@
       "votes": 65,
       "popular": true,
       "available": true,
+      "description":"sıcak içecek",
       "category": "Sıcak İçecekler"
     },
     {
@@ -77,6 +78,7 @@
       "votes": 15,
       "popular": true,
       "available": true,
+      "description":"soğuk içecek",
       "category": "Soğuk İçecekler"
     },
     {
@@ -88,6 +90,7 @@
       "votes": 55,
       "popular": false,
       "available": true,
+      "description":"sıcak içecek",
       "category": "Sıcak İçecekler"
     },
     {
@@ -99,6 +102,7 @@
       "votes": 23,
       "popular": false,
       "available": true,
+      "description":"sıcak içecek",
       "category": "Sıcak İçecekler"
     },
     {
@@ -110,6 +114,7 @@
       "votes": 122,
       "popular": false,
       "available": false,
+      "description":"atıştırmalık",
       "category": "Atıştımalıklar"
     },
     {
@@ -121,6 +126,7 @@
       "votes": 122,
       "popular": false,
       "available": false,
+      "description":"tatlı",
       "category": "Tatlılar"
     }
   ],
